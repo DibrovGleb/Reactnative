@@ -1,5 +1,6 @@
 {
   "expo": {
+    "owner": "dibrovgleb",
     "name": "Reactnative",
     "slug": "Reactnative",
     "version": "1.0.0",
@@ -28,6 +29,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bcbbce16-49ff-41a6-9764-cec4d5c94cef"
+      }
     }
   }
 }
