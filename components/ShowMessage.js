@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  Provider,
   Button,
   Dialog,
   DialogHeader,
@@ -13,7 +12,7 @@ export default function ShowMessage (){
   const [visible, setVisible] = useState(false);
 
   return (
-    <Provider>
+    <>
       <Button
         title="Открыть окно подсказки"
         style={{ margin: 16 }}
@@ -43,6 +42,6 @@ export default function ShowMessage (){
           />
         </DialogActions>
       </Dialog>
-      </Provider>
+      </>
   );
 };

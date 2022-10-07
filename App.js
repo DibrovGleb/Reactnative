@@ -3,15 +3,18 @@ import ShowMessage from "./components/ShowMessage";
 import Switches from "./components/Switches";
 import FlexBoxes from "./components/FlexBoxes";
 import WrapBoxes from "./components/WrapBoxes";
+import {Provider} from "@react-native-material/core";
 
 const App = () => {
   return(
   <>
-    <Header/>
+  <Header/>
+  <Provider>
     <ShowMessage/>
     <Switches/>
     <FlexBoxes/>
     <WrapBoxes/>
+  </Provider>
   </>
   )
 };
