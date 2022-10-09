@@ -3,7 +3,8 @@ import { ListItem, Switch } from "@react-native-material/core";
 
 export default function Switches() {
   const [checked, setChecked] = useState(true),
-        [enabled, setEnabled] = useState(true);
+        [enabled, setEnabled] = useState(true)
+        
   return (
     <>
       <ListItem
