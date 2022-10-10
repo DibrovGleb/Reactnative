@@ -3,9 +3,10 @@ import ShowMessage from "./components/ShowMessage";
 import Switches from "./components/Switches";
 import FlexBoxes from "./components/FlexBoxes";
 import WrapBoxes from "./components/WrapBoxes";
-import {Provider, ActivityIndicator, Stack, Text} from "@react-native-material/core";
+import {Provider} from "@react-native-material/core";
 import { useState } from "react";
 import Loading from "./components/Loading";
+import TextFormater from "./components/TextFormater";
 
 const App = () => {
   const [load, setload] = useState(true)
@@ -14,14 +15,10 @@ const App = () => {
     }, 1000)
 
   return(
-    load ? <Loading/> : <>
-      <Header/> 
-      <Provider> 
-      <ShowMessage/>
-      <Switches/>
-      <FlexBoxes/>
-      <WrapBoxes/>
-      </Provider>
+    load ? <Loading/> : 
+    <>
+      <Header/>
+      <TextFormater/>
     </>
   )
 };
