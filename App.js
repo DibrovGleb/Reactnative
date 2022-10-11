@@ -13,7 +13,7 @@ const App = () => {
     load ? <Loading/> : 
     <>
       <Header/>
-      <ImageSelect/>
+      <ImageSelect/> 
     </>
   )
 };
