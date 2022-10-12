@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Wrap, Text, TextInput, Button, Badge} from "@react-native-material/core";
+import { Wrap, Text, TextInput, Button} from "@react-native-material/core";
 import Icon from "@expo/vector-icons/MaterialCommunityIcons";
+import { Image } from "react-native";
 
-export default function TextFormater (){
+export default function AddElement (){
     const [text, onChangeText] = useState(""),
           [size, setSize] = useState(16),
           [bold,setBold] = useState(false),
@@ -18,14 +19,17 @@ export default function TextFormater (){
             onPress={()=>(setSize(size+1))}/>
             <Button title={props => <Icon size={24} name="minus" {...props} />}
             onPress={()=>(setSize(size-1))}/>
-            <Button title="B" onPress={()=>(bold ? setBold(null): setBold('bold'))}/>
-            <Button title="I" onPress={()=>(italic ? setItalic(null): setItalic('italic'))}/>
         </Wrap>
-        <TextInput multiline numberOfLines={6}
-        style={{margin:14}} inputStyle={{fontSize:size, fontWeight:bold, fontStyle:italic}}
-        variant="outlined" placeholder="Введите текст для форматирования"
-        onChangeText={text => onChangeText(text)}/>
-        
+
+        <Image style={{width:150, height:150}} source={{
+            uri: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png',
+        }}/>
+        <Image style={{width:150, height:150}} source={{
+            uri: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png',
+        }}/>
+        <Image style={{width:150, height:150}} source={{
+            uri: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png',
+        }}/>
     </>
     )
 }
