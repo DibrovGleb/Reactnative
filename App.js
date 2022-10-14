@@ -37,7 +37,7 @@ const App = () => {
         }, 1000)
 
   return(
-    //load ? <Loading/> : 
+    load ? <Loading/> : 
     <>
       <Header/>
       <Wrap spacing={2} mt={16} center style={{gap:10}}>
